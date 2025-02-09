@@ -55,13 +55,17 @@
   }
   @media (max-width: 860px) {
     .team-card-container{
-        /* flex-direction: column !important; */
         flex-wrap: wrap;
     }
     .team-card {
        max-width: 400px;
        
     }
+  }
+  @media (max-width: 350px) {
+     .form input{
+       width: 100% !important;
+     }
   }
   
   
@@ -444,18 +448,14 @@ footer p {
 .form {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 30px;
-  margin: 3px;
-  gap: 30px;
+  gap: 10px;
 }
 footer input {
   border-radius: 30px 30px 30px 30px;
   border-width: 0;
   background-color: ghostwhite;
-  width: 160%;
-  padding: 18px;
+  width: 50vh;
+  padding: 16px;
 }
 .subscribe {
   display: inline-block;
@@ -505,7 +505,7 @@ footer input {
 }
 .footer-bottom {
   display: flex;
-  gap: 15rem;
+  gap: 17rem;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
@@ -523,7 +523,7 @@ footer input {
 .form-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
   justify-content: baseline;
   gap: 10px;
 }
